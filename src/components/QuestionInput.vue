@@ -198,6 +198,9 @@ textarea:focus {
     max-width: 100%; /* Full width for mobile */
     width: 90%; /* Adjust width for better spacing on mobile */
     margin: 10px auto; /* Center container with some margin */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
   }
 }
 </style>
