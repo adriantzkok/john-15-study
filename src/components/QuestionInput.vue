@@ -197,6 +197,7 @@ textarea:focus {
   .container {
     max-width: 100%; /* Full width for mobile */
     width: 90%; /* Adjust width for better spacing on mobile */
+    margin: 10px auto; /* Center container with some margin */
   }
 }
 </style>
