@@ -24,6 +24,7 @@
           </div>
         </template>
       </div>
+      <button class="refreshbutton" @click="getData">Refresh Responses</button>
     </div>
   </div>
 </template>
@@ -135,6 +136,22 @@ textarea:focus {
 
 .submitbutton:hover {
   background-color: #0056b3; /* Darker blue on hover */
+}
+
+.refreshbutton {
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition */
+  margin-top: 10px; /* Space above the refresh button */
+}
+
+.refreshbutton:hover {
+  background-color: #218838; /* Darker green on hover */
 }
 
 .responsescontainer {

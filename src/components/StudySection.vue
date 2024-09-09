@@ -30,15 +30,15 @@
         </blockquote>
         <div class="grid-container">
           <investigation-card
-            item="1. What is the significance of the Vine?"
-            answer="temp ans"
+            item="1. What is the significance of the Vine and the Vinedresser?"
+            answer="Vine: Refer to Psalm 80:10-11 and Isaiah 5:4"
           ></investigation-card>
           <investigation-card
-            item="2. What is meant by Fruit in this context?"
-            answer="temp ans"
+            item="2. What is meant by Fruit and Pruning the Fruit in this context?"
+            answer="The Fruit can refer to love or the fruit of the sprit. God prunes the branches (us) so that we can be even more fruitful."
           ></investigation-card>
           <investigation-card
-            item="3. What does it mean to remain in him?"
+            item="3. What exactly does Jesus mean by remaining in him?"
             answer="temp ans"
           ></investigation-card>
         </div>

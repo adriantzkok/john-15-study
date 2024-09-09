@@ -35,4 +35,8 @@ export default {
   border: 1px solid #ccc; /* Example border */
   padding: 1.5rem;
 }
+
+.grid-item:hover {
+  cursor: pointer;
+}
 </style>

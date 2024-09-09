@@ -7,7 +7,7 @@
       </div>
       <transition name="fade">
         <div class="faq-answer" v-if="isActive(index)">
-          <p>{{ item.answer }}</p>
+          <p class="faq-answer-text">{{ item.answer }}</p>
         </div>
       </transition>
     </div>
@@ -21,16 +21,18 @@ export default {
       faqs: [
         {
           question: '1. The Last Supper',
-          answer: 'Vue.js is a progressive JavaScript framework for building user interfaces.'
+          answer:
+            'John 14 and 15 occurs during the last supper, Jesus` final meal with his disciples.'
         },
         {
           question: '2. I am the way, the truth, and the life',
-          answer: 'You can install Vue.js via npm, yarn, or by including it in a script tag.'
+          answer:
+            'In the prior chapter, John 14:6, Jesus refers to himself as the way, the truth, and the life.'
         },
         {
           question: '3. Physically absent but Spiritually present',
           answer:
-            'Components are reusable instances with a name. They can be used in other components.'
+            'Jesus expresses in John 14 that although he is leaving, he will not leave them alone.'
         }
       ],
       activeIndex: null
@@ -56,6 +58,7 @@ export default {
 .faq-item {
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-bottom: 10px; /* Space between FAQ items */
 }
 
 .faq-question {
@@ -70,6 +73,18 @@ export default {
 .faq-answer {
   padding: 15px;
   background-color: #fff;
+}
+
+.faq-answer-text {
+  font-size: 1rem; /* Font size for the answer */
+  color: #333; /* Dark text color */
+  line-height: 1.5; /* Improved line spacing */
+  margin: 0; /* Remove default margin */
+  transition: color 0.3s; /* Smooth transition for color changes */
+}
+
+.faq-answer-text:hover {
+  color: #007bff; /* Change color on hover */
 }
 
 .arrow {
