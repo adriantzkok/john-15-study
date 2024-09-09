@@ -39,7 +39,7 @@
           ></investigation-card>
           <investigation-card
             item="3. What exactly does Jesus mean by remaining in him?"
-            answer="temp ans"
+            answer="By following the Holy Spirit. Refer to John 14:26"
           ></investigation-card>
         </div>
       </investigation-section>
