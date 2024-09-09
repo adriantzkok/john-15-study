@@ -22,8 +22,8 @@ export default {
       this.Section = true
     },
     selectSection(sectiontype) {
-      console.log(sectiontype)
       this.type = sectiontype
+      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
 }
