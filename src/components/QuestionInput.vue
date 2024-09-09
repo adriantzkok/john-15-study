@@ -83,6 +83,7 @@ export default {
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap to the next line */
   gap: 1rem; /* Space between containers */
+  justify-content: center; /* Center items horizontally */
 }
 
 .container {
@@ -190,10 +191,12 @@ textarea:focus {
 @media (max-width: 768px) {
   .responsequestion1 {
     flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
   }
 
   .container {
     max-width: 100%; /* Full width for mobile */
+    width: 90%; /* Adjust width for better spacing on mobile */
   }
 }
 </style>
