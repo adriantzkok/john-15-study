@@ -54,4 +54,25 @@ h1 {
   padding: 10px 20px; /* Button padding */
   font-size: 1.2rem; /* Increase font size for visibility */
 }
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .heroimage {
+    height: 70vh; /* Adjust height for smaller screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+    letter-spacing: 0.3rem; /* Reduce letter spacing */
+  }
+
+  .herotext {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .button {
+    padding: 8px 16px; /* Smaller button padding */
+    font-size: 1rem; /* Smaller font size */
+  }
+}
 </style>
