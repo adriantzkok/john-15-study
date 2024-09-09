@@ -1,6 +1,6 @@
 <template>
   <div class="responsequestion1">
-    <div class="container">
+    <div class="container question-container">
       <h2 class="studyh2">Question</h2>
       <p class="studyp">{{ question }}</p>
       <form @submit.prevent="submitForm">
@@ -12,7 +12,7 @@
         <button class="submitbutton">Submit</button>
       </form>
     </div>
-    <div class="container">
+    <div class="container response-container">
       <h2>Responses</h2>
       <div class="responsescontainer">
         <template v-if="data.length === 0">
@@ -79,13 +79,18 @@ export default {
 </script>
 
 <style scoped>
+.responsequestion1 {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 1rem; /* Space between containers */
+}
+
 .container {
   display: flex;
-  max-width: 50%;
   flex-direction: column;
-  gap: 1rem;
-  height: 100%;
-  width: 100%;
+  flex: 1; /* Allow containers to grow */
+  min-width: 300px; /* Minimum width for containers */
+  max-width: 50%; /* Max width for larger screens */
   margin: 0 auto; /* Center the container */
   padding: 20px; /* Add padding */
   border: 1px solid #ddd; /* Add border */
@@ -123,15 +128,19 @@ textarea:focus {
   outline: none; /* Remove outline */
 }
 
-.submitbutton {
+.submitbutton,
+.refreshbutton {
   padding: 10px 20px; /* Button padding */
   border: none; /* Remove border */
   border-radius: 4px; /* Rounded corners */
-  background-color: #007bff; /* Blue background */
-  color: white; /* White text */
   font-size: 1rem; /* Font size */
   cursor: pointer; /* Pointer cursor */
   transition: background-color 0.3s; /* Smooth transition */
+}
+
+.submitbutton {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
 }
 
 .submitbutton:hover {
@@ -139,14 +148,8 @@ textarea:focus {
 }
 
 .refreshbutton {
-  padding: 10px 20px; /* Button padding */
-  border: none; /* Remove border */
-  border-radius: 4px; /* Rounded corners */
   background-color: #28a745; /* Green background */
   color: white; /* White text */
-  font-size: 1rem; /* Font size */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s; /* Smooth transition */
   margin-top: 10px; /* Space above the refresh button */
 }
 
@@ -181,5 +184,16 @@ textarea:focus {
 .responsescontainer p:hover {
   transform: scale(1.02); /* Slightly enlarge on hover */
   background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 768px) {
+  .responsequestion1 {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .container {
+    max-width: 100%; /* Full width for mobile */
+  }
 }
 </style>

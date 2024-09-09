@@ -164,4 +164,24 @@ blockquote {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+/* Media Queries for Mobile Layout */
+@media (max-width: 768px) {
+  .responsequestion1 {
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem; /* Reduce gap for mobile */
+  }
+
+  .investigation .grid-container {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .controlbar {
+    flex-direction: column; /* Stack control bar items */
+  }
+
+  .container {
+    max-width: 100%; /* Full width on mobile */
+  }
+}
 </style>
