@@ -44,6 +44,26 @@
         </div>
       </investigation-section>
     </div>
+    <div>
+      <investigation-section heading="Investigation #2">
+        <blockquote>
+          <div v-for="verse in verses.slice(8, 15)" :key="verse.verse" class="verses">
+            <span class="versenumber">{{ verse.verse }} </span>
+            <span class="verses">{{ verse.text.replace(/\n/g, ' ') }}</span>
+          </div>
+        </blockquote>
+        <div class="grid-container">
+          <investigation-card
+            item="1. What does it mean to love in this section's context?"
+            answer="Love is divine (v9), mutual (v12), and sacrificial (v13)"
+          ></investigation-card>
+          <investigation-card
+            item="2. What is the significance of Jesus calling him his friends?"
+            answer="Our relationship through God is built through a connection."
+          ></investigation-card>
+        </div>
+      </investigation-section>
+    </div>
   </div>
 </template>
 
