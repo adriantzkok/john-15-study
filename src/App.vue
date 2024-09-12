@@ -23,7 +23,11 @@ export default {
     },
     selectSection(sectiontype) {
       this.type = sectiontype
-      window.scrollTo({ top: 920, behavior: 'smooth' })
+
+      // Check if the viewport width is less than or equal to 768 pixels (common mobile breakpoint)
+      const scrollToPosition = window.innerWidth <= 768 ? 520 : 920
+
+      window.scrollTo({ top: scrollToPosition, behavior: 'smooth' })
     }
   }
 }
