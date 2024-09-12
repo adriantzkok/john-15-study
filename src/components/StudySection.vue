@@ -31,7 +31,7 @@
         <div class="grid-container">
           <investigation-card
             item="1. What is the significance of the Vine and the Vinedresser?"
-            answer="Vine: Refer to Psalm 80:10-11 and Isaiah 5:4"
+            answer="Vine: Refer to Psalm 80:8-9 and Isaiah 5:4"
           ></investigation-card>
           <investigation-card
             item="2. What is meant by Fruit and Pruning the Fruit in this context?"
