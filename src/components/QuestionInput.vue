@@ -29,6 +29,7 @@
   </div>
 </template>
 
+Copy
 <script>
 import axios from 'axios'
 
@@ -43,14 +44,21 @@ export default {
       required: false
     }
   },
+
   data() {
     return {
       userInput: '', // Store textarea input
       data: [] // Initialize as an empty array
     }
   },
+
   methods: {
     submitForm() {
+      if (this.userInput.trim().length === 0) {
+        alert('Please enter a response that is not empty!') // Alert the user if the input is empty
+        return // Prevent form submission
+      }
+
       axios
         .post(this.link, JSON.stringify({ question: this.userInput }))
         .then((response) => {
@@ -72,6 +80,7 @@ export default {
         .catch((error) => console.log(error))
     }
   },
+
   mounted() {
     this.getData() // Fetch data when the component is mounted
   }
