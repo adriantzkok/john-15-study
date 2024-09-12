@@ -23,7 +23,7 @@ export default {
     },
     selectSection(sectiontype) {
       this.type = sectiontype
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      window.scrollTo({ top: 920, behavior: 'smooth' })
     }
   }
 }

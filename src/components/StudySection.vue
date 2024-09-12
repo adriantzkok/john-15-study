@@ -61,8 +61,21 @@
             item="2. What is the significance of Jesus calling him his friends?"
             answer="Our relationship through God is built through a connection."
           ></investigation-card>
+          <investigation-card
+            item="3. How can we become Jesus' friend?"
+            answer="By obeying v14"
+          ></investigation-card>
         </div>
       </investigation-section>
+    </div>
+    <div>
+      <question-area header="Question 3"
+        ><question-input
+          question="Refer to verse 16. Do you think we are chosen by God?"
+          :link="question_link_3"
+        >
+        </question-input
+      ></question-area>
     </div>
   </div>
 </template>
@@ -87,7 +100,8 @@ export default {
       InvestigationSection: john15verse.reference,
       verses: john15verse.verses,
       question_link_1: `${import.meta.env.VITE_FIREBASE_DATABASE}question1.json`,
-      question_link_2: `${import.meta.env.VITE_FIREBASE_DATABASE}question2.json`
+      question_link_2: `${import.meta.env.VITE_FIREBASE_DATABASE}question2.json`,
+      question_link_3: `${import.meta.env.VITE_FIREBASE_DATABASE}question3.json`
     }
   }
 }
